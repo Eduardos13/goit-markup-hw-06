@@ -579,9 +579,9 @@ img {
     flex-direction: column;
 }
 
-.footer-logo-container {
-    /* margin-right: 120px;  */
-}
+/* .footer-logo-container {
+    margin-right: 120px; 
+} */
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
