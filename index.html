@@ -16,7 +16,7 @@
 
 <body> 
     
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-navigation">
             <nav class="navigation">
                 <a href="./index.html" class="header-logo">Web<span>Studio</span></a>
@@ -32,8 +32,65 @@
                     <li><a href="tel:+110001111111" class="address-item">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="mob-menu-btn">
+                <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-filter"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+
+        <div class="mob-menu">
+            <button type="button" class="mob-menu-btn-close">
+                <svg class="mob-btn-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+                    <nav class="mob-navigation">
+                        <ul class="mob-navigation-list">
+                            <li><a href="./index.html" class="mob-navigation-item">Studio</a></li>
+                            <li><a href="" class="mob-navigation-item">Portfolio</a></li>
+                            <li><a href="" class="mob-navigation-item">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <address>
+                        <ul class="mob-contacts">
+                            <li><a href="mailto:info@devstudio.com" class="mob-address-item">info@devstudio.com</a></li>
+                            <li><a href="tel:+110001111111" class="mob-address-item">+11 (000) 111-11-11</a></li>
+                        </ul>
+                    </address>
+            <ul class="mob-menu-social-list">
+                <li class="mob-menu-social-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="mob-menu-social-link">
+                        <svg width="16" height="16" class="mob-menu-social-icon">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-social-item">
+                    <a href="https://www.twitter.com/" target="_blank" class="mob-menu-social-link">
+                        <svg width="16" height="16" class="mob-menu-social-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-social-item">
+                    <a href="https://www.facebook.com/" target="_blank" class="mob-menu-social-link">
+                        <svg width="16" height="16" class="mob-menu-social-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-menu-social-item">
+                    <a href="https://www.linkedin.com/" target="_blank" class="mob-menu-social-link">
+                        <svg width="16" height="16" class="mob-menu-social-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header> 
 
     <main>
 
@@ -370,7 +427,7 @@
             </div>
         </footer>
 
-        <div class="modal-container is-open">  
+        <div class="modal-container">  
             <div class="modal-window" >
                 <button type="button" class="modal-window-button">
                     <svg class="button-close" width="8" height="8">
