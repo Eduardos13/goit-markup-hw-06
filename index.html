@@ -150,7 +150,16 @@
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-list">
                      <li class="our-team-item">
-                        <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img 
+                        srcset="
+                        ./images/mark.jpg 1x, 
+                        ./images/mark@2x.jpg 2x
+                        "
+                        src="./images/mark.jpg" 
+                        alt="Mark Guerrero" 
+                        width="264" 
+                        height="260"
+                        >
                         <div class="member-info">
                             <h3 class="member-name">Mark Guerrero</h3>
                             <p class="member-description">Product Designer</p>
@@ -187,7 +196,16 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/tom.jpg" alt="Tom Ford" width="264" height="260">
+                        <img 
+                        srcset="
+                        ./images/tom.jpg 1x,
+                        ./images/tom@2x.jpg 2x
+                        "
+                        src="./images/tom.jpg"
+                        alt="Tom Ford"
+                        width="264"
+                        height="260"
+                        >
                         <div class="member-info">
                             <h3 class="member-name">Tom Ford</h3>
                             <p class="member-description">Frontend Developer</p>
@@ -224,7 +242,16 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img
+                        srcset="
+                        ./images/camila.jpg 1x,
+                        ./images/camila@2x.jpg 2x
+                        "
+                        src="./images/camila.jpg"
+                        alt="Camila Garcia"
+                        width="264"
+                        height="260"
+                        >
                         <div class="member-info">
                             <h3 class="member-name">Camila Garcia</h3>
                             <p class="member-description">Marketing</p>
@@ -261,7 +288,16 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img
+                        srcset="
+                        ./images/daniel.jpg 1x,
+                        ./images/daniel@2x.jpg 2x
+                        "
+                        src="./images/daniel.jpg"
+                        alt="Daniel Wilson"
+                        width="264"
+                        height="260"
+                        >
                         <div class="member-info">  
                             <h3 class="member-name">Daniel Wilson</h3>
                             <p class="member-description">UI Designer</p>
@@ -317,7 +353,25 @@
                     </li>
                     <li class="our-product-item">
                         <div class="our-product-image">
-                            <img src="./images/payments.jpg" alt="Cashless Payments" width="360" height="300">
+                            <picture>
+                                <source 
+                                    media="(min-width: 1158px)" 
+                                    srcset="./images/payments.jpg 1x, ./images/payments@2x.jpg 2x"
+                                >
+                                <source 
+                                    media="(min-width: 768px)" 
+                                    srcset="./images/payments-tab@1x.jpg 1x, ./images/payments-tab@2x.jpg 2x"
+                                >
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="./images/payments-mob@1x.jpg 1x, ./images/payments-mob@2x.jpg 2x"
+                                >
+                                <img
+                                src="./images/payments.jpg"
+                                alt="Cashless Payments"
+                                width="360"
+                                >                             
+                            </picture>
                             <p class="product-image-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="product-description">   
@@ -327,7 +381,25 @@
                     </li>
                     <li class="our-product-item">
                         <div class="our-product-image">
-                            <img src="./images/meditation.jpg" alt="Meditation App" width="360" height="300">
+                            <picture>
+                                <source
+                                media="(min-width: 1158px)"
+                                srcset="./images/meditation.jpg 1x, ./images/meditation@2x.jpg 2x"
+                                >
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="./images/meditation-tab@1x.jpg 1x, ./images/meditation-tab@2x.jpg 2x"
+                                >
+                                <source
+                                media="(max-width: 767px)"
+                                srcset="./images/meditation-mob@1x.jpg 1x, ./images/meditation-mob@2x.jpg 2x"
+                                >
+                                <img
+                                src="./images/meditation.jpg"
+                                alt="Meditation App"
+                                width="360"
+                                >
+                            </picture>
                             <p class="product-image-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="product-description">
@@ -337,7 +409,25 @@
                     </li>
                     <li class="our-product-item">
                         <div class="our-product-image">
-                            <img src="./images/taxi.jpg" alt="Taxi Service" width="360" height="300">
+                            <picture>
+                                <source
+                                media="(min-width: 1158px)"
+                                srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
+                                >
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="./images/taxi-tab@1x.jpg 1x, ./images/taxi-tab@2x.jpg 2x"
+                                >
+                                <source
+                                media="(max-width: 767px)"
+                                srcset="./images/taxi-mob@1x.jpg 1x, ./images/taxi-mob@2x.jpg 2x"
+                                >
+                                <img
+                                src="./images/taxi.jpg"
+                                alt="Taxi Service"
+                                width="360"
+                                >
+                            </picture>
                             <p class="product-image-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="product-description">
@@ -347,7 +437,25 @@
                     </li>
                     <li class="our-product-item">
                         <div class="our-product-image">
-                            <img src="./images/illustrations.jpg" alt="Screen Illustrations" width="360" height="300">
+                            <picture>
+                                <source
+                                media="(min-width: 1158px)"
+                                srcset="./images/illustrations.jpg 1x, /images/illustrations@2x.jpg 2x"
+                                >
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="./images/illustrations-tab@1x.jpg 1x, ./images/illustrations-tab@2x.jpg 2x,"
+                                >
+                                <source
+                                media="(max-width: 767px)"
+                                srcset="./images/illustrations-mob@1x.jpg 1x, ./images/illustrations-mob@2x.jpg 2x"
+                                >
+                                <img
+                                src="./images/illustrations.jpg"
+                                alt="Screen Illustrations"
+                                width="360"
+                                >
+                            </picture>
                             <p class="product-image-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="product-description">
@@ -357,7 +465,25 @@
                     </li>
                     <li class="our-product-item">
                         <div class="our-product-image">
-                            <img src="./images/courses.jpg" alt="Online Courses" width="360" height="300">
+                            <picture>
+                                <source
+                                media="(min-width: 1158px)"
+                                srcset="./images/courses.jpg 1x, ./images/courses@2x.jpg 2x"
+                                >
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="./images/courses-tab@1x.jpg 1x, ./images/courses-tab@2x.jpg 2x"
+                                >
+                                <source
+                                media="(max-width: 767px)"
+                                srcset="./images/courses-mob@1x.jpg 1x, ./images/courses-mob@2x.jpg 2x"
+                                >
+                                <img
+                                src="./images/courses.jpg"
+                                alt="Online Courses"
+                                width="360"
+                                >
+                            </picture>
                             <p class="product-image-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="product-description">

@@ -258,13 +258,30 @@ img {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-    ), url(../images/backgroung.jpg);
+    ), url(../images/background-mob@1x.jpg);
     background-size: cover;
     /* max-width: 1440px; */
     width: 320px;
     background-repeat: no-repeat; 
     background-position: center; 
     margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-image {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/background-mob@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1158px) {
+    
 }
 
 .hero-image-block {
