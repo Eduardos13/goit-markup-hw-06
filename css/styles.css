@@ -1322,3 +1322,42 @@ input:focus + .input-icon{
     /* margin-left: 100px; */
     margin-left: 43px;
 }
+
+@media screen and (min-width: 768px) {
+    .modal-window {
+        width: 408px; 
+        min-height: 584px;
+        padding: 72px 25px 24px 23px;
+    }
+
+    .form-privacy-lable {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: flex;
+    }
+    
+    .form-privacy-span {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex; 
+        align-items: center;
+        justify-content: center;
+        fill: transparent; 
+        margin: 0 8px 0 0;
+    }
+
+    .form-send-button {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .modal-window {
+        padding: 72px 24px 24px 24px;
+    }
+}
