@@ -456,7 +456,7 @@ img {
         letter-spacing: 0.02em;
         text-align: center;
         color: #ffffff;
-        width: 496px;
+        max-width: 496px;
         padding-bottom: 36px;
     }
 }
