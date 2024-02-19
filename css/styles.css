@@ -40,9 +40,9 @@ img {
 
 @media screen and (min-width: 1158px) {
     .container { 
-        width: 1440px;
+        width: 1158px;
         margin: 0 auto;
-        padding: 0 156px;
+        padding: 0 15px;
     }
 }
 
@@ -221,6 +221,8 @@ img {
     }
 }
 
+/*========= Mob menu ======= */
+
 .mob-menu-btn {
     border: none;
     background-color: transparent;
@@ -236,7 +238,6 @@ img {
     padding: 24px 24px 40px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -263,11 +264,13 @@ img {
 }
 
 .mob-navigation-list {
-    padding-top: 48px;
+    margin-top: 48px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    margin-bottom: 168px;
 }
+
 .mob-navigation-item {
     font-weight: 700;
     font-size: 36px;
@@ -356,6 +359,17 @@ img {
     margin: 0 auto;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-image {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/background-mob@2x.jpg);
+    }
+}
+
 .hero-image-block {
     display: flex;
     flex-direction: column;
@@ -371,7 +385,8 @@ img {
     text-transform: capitalize;
     text-align: center;
     color: #ffffff;
-    padding-bottom: 72px;
+    margin: 0 0 72px 0;
+    max-width: 216px;
 }
 
 .button {
@@ -550,6 +565,7 @@ img {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #434455;
+        text-align: left;
     }
     
     .about-us-advantage-text {
@@ -611,6 +627,10 @@ img {
     background-color: #F4F4FD;
     /* padding: 120px 0; */
     padding: 96px 0;
+}
+
+.our-team .container {
+    width: 296px; /* 264px + 2 * 16px (padding left and right */
 }
 
 .our-team-title {
@@ -703,13 +723,16 @@ img {
 
 @media screen and (min-width: 768px) {
 
+    .our-team .container {
+        width: 584px; /* 552px + 2 * 16px (padding left and right */
+    }
+
     .our-team-list {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 24px;
         row-gap: 64px;
-        /* width: 552px; */
     }
 
     .our-team-item {
@@ -729,6 +752,10 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+    .our-team .container {
+        width: 1158px; /* 1128px + 2 * 15px (padding left and right */
+    }
+
     .our-team {
         padding: 120px 0;
     }
@@ -916,14 +943,17 @@ img {
     color: #f4f4fd;
 }
 
+.footer-logo-container {
+    margin-left: 0;
+    margin-bottom: 72px;
+}
+
 .footer-description {
     font-size: 16px;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-left: 0;
-    margin-bottom: 72px;
 }
 
 .footer-social-links-container {
@@ -974,7 +1004,7 @@ img {
 
 .footer-feedback {
     /* padding-left: 80px; */
-    padding-top: 72px;
+    margin-top: 72px;
 }
 
 .footer-feedback-title {
@@ -1047,10 +1077,7 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
-    }
-
-    .footer-logo-container {
-        margin-left: 108px; 
+        width: 584px;
     }
 
     .footer-logo {
@@ -1076,32 +1103,38 @@ img {
     }
 
     .footer-feedback {
-        margin: 0 auto;
-        padding-top: 72px;
+        margin-top: 0;
     }
 
     .footer-description {
         margin-bottom: 0;
+    }
+
+    .footer-feedback-title {
+        text-align: left;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .footer {
         padding: 100px 0;
-        width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .footer-container {
         display: flex;
         align-items: baseline;
         flex-direction: row;
-        padding-top: 0;
-        padding-right: 100px;
+        gap: 0;
+        width: 1158px; /* 1128px + 2 * 15px (padding left and right */
     }
 
     .footer-logo-container {
-        margin-right: 120px; 
-        margin-left: 0;
+        margin: 0 80px 0 0;
 
     }
 
