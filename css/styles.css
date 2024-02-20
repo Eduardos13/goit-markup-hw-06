@@ -301,6 +301,14 @@ img {
     letter-spacing: 0.02em;
 }
 
+.mob-decorativ-navigation {
+    color: #404BBF;
+}
+
+.mob-decorativ-contact {
+    color: #4D5AE5;
+}
+
 .mob-address-item:hover,
 .mob-address-item:active {
     color: #404BBF;
