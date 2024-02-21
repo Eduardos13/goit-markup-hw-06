@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5, h6, p{
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container { 
@@ -290,7 +292,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-top: 20px;
 }
 
 .mob-address-item {
@@ -317,9 +318,15 @@ img {
 .mob-menu-social-list {
     display: flex;
     gap: 40px;
-    margin-top: 8px;
     justify-content: center;
-    margin-top: 48px;
+}
+
+.mob-padding {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 48px;
+    justify-content: space-between;
 }
 
 .mob-menu-social-item {
@@ -476,7 +483,8 @@ img {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ), url(../images/backgroung.jpg);
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -492,6 +500,7 @@ img {
     .main-title {
         padding-bottom: 48px;
         text-transform: none;
+        width: 496px;
     }
 }
 
